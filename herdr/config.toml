@@ -1,0 +1,29 @@
+onboarding = false
+
+[ui]
+# Herdr owns plain right-click (pane menu). Ctrl+right-click reaches the pane app (nvim context menu).
+right_click_passthrough_modifier = "ctrl"
+
+[ui.sound]
+enabled = true
+done_path = "sounds/done.mp3"        # Glass — soft bell, peaceful
+request_path = "sounds/request.mp3"  # Tink — quiet attention chime
+
+[ui.toast]
+enabled = false
+
+[keys]
+prefix = "ctrl+space"
+new_workspace = "n"
+new_tab = "t"
+split_vertical = "d"
+split_horizontal = "shift+d"
+close_pane = "w"
+focus_pane_left = "alt+h"
+focus_pane_down = "alt+j"
+focus_pane_up = "alt+k"
+focus_pane_right = "alt+l"
+previous_tab = "["
+next_tab = "]"
+previous_workspace = "shift+["
+next_workspace = "shift+]"

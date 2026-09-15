@@ -1,0 +1,30 @@
+background-opacity = 0.8
+background-blur = true
+
+# Highlight = copy to clipboard. Right-click or Cmd+V to paste.
+copy-on-select = clipboard
+
+# Silence macOS native bell + notification sound (herdr dun-dun is the only sound)
+desktop-notifications = false
+bell-features = no-audio,no-system,no-attention,no-title,no-border
+notify-on-command-finish = never
+
+# Cmd-feel shortcuts routed to herdr (prefix = ctrl+space = \x00)
+keybind = cmd+t=text:\x00t
+keybind = cmd+n=text:\x00n
+keybind = cmd+d=text:\x00d
+keybind = cmd+shift+d=text:\x00D
+keybind = cmd+w=text:\x00w
+keybind = cmd+bracket_left=text:\x00[
+keybind = cmd+bracket_right=text:\x00]
+keybind = cmd+shift+bracket_left=text:\x00{
+keybind = cmd+shift+bracket_right=text:\x00}
+
+# Direct pane focus (no prefix needed — herdr binds alt+hjkl directly)
+keybind = cmd+left=text:\x1bh
+keybind = cmd+down=text:\x1bj
+keybind = cmd+up=text:\x1bk
+keybind = cmd+right=text:\x1bl
+
+# Cmd+Shift+F → nvim project search (arrives as alt+shift+f; herdr forwards it, nvim binds <M-F>)
+keybind = cmd+shift+f=text:\x1bF

@@ -1,0 +1,18 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/Users/max/.local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/Users/max/.local/bin/gh auth git-credential
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Max Twelftree
+	email = max@maincode.com
+[core]
+	editor = zed --wait
+[sequence]
+	editor = zed --wait
